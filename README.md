@@ -1,2 +1,2 @@
-# react-standings
-React Standings component
+# react-tournament
+React Tournament component
