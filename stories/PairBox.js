@@ -12,7 +12,7 @@ stories
     const aspectRatio = number('aspectRatio', 3);
     const background = text('background', 'red');
     const radius = number('radius', 5);
-    const width = text('width', '500px');
+    const width = text('width', '250px');
 
     return (
       <PairBox
