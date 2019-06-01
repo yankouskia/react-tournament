@@ -88,6 +88,11 @@ export function PairBox({
 PairBox.propTypes = {
   aspectRatio: PropTypes.number,
   background: PropTypes.string,
+  index: PropTypes.number.isRequired,
+  pair: PropTypes.arrayOf(PropTypes.shape({
+    user: PropTypes.string.isRequired,
+    score: PropTypes.number.isRequired,
+  })).isRequired,
   radius: PropTypes.number,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
