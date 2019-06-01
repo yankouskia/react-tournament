@@ -22,7 +22,8 @@
     "react-dom": "^16.8.6"
   },
   "scripts": {
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook -o check"
   },
   "dependencies": {
     "styled-components": "^4.2.0"

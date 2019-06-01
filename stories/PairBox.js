@@ -11,13 +11,23 @@ stories
   .add('Pair', () => {
     const aspectRatio = number('aspectRatio', 3);
     const background = text('background', 'red');
+    const index = number('index', 13);
     const radius = number('radius', 5);
     const width = text('width', '250px');
+    const pair = [{
+      score: 35,
+      user: 'Alex',
+    }, {
+      score: 43,
+      user: 'Yankouski',
+    }]
 
     return (
       <PairBox
         aspectRatio={aspectRatio}
         background={background}
+        index={index}
+        pair={pair}
         radius={radius}
         width={width}
       />
