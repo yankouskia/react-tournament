@@ -25,6 +25,7 @@
   },
   "scripts": {
     "storybook": "start-storybook",
-    "build-storybook": "build-storybook -c .storybook -o check"
+    "build-storybook": "build-storybook -c .storybook -o check",
+    "build": "NODE_ENV=production webpack -p"
   }
 }
