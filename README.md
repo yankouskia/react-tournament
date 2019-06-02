@@ -7,9 +7,9 @@
 
 ## Demo
 
-__React Stories are available [here](https://yankouskia.github.io/react-tournament/check)__
+__[React Stories are available here](https://yankouskia.github.io/react-tournament/check)__
 
-__DOCs are available [here](#DOCS)__
+__[DOCs are available here](#DOCS)__
 
 Usage
 :-------------------------:
@@ -29,7 +29,7 @@ Big table
 
 Table with custom styles
 :-------------------------:
-<img src="./resources/big_table.png" data-canonical-src="./resources/big_table.png" width="1000" />
+<img src="./resources/custom_styles.png" data-canonical-src="./resources/custom_styles.png" width="1000" />
 
 ## How to use
 
