@@ -1,9 +1,9 @@
 {
-  "name": "react-standings",
+  "name": "react-tournament",
   "version": "0.1.0",
-  "description": "React Standings component",
+  "description": "React Tournament component",
   "main": "./dist/library.js",
-  "repository": "git@github.com:yankouskia/react-standings.git",
+  "repository": "git@github.com:yankouskia/react-tournament.git",
   "author": "yankouskia <aleksandr.yankovskiy@gmail.com>",
   "license": "MIT",
   "devDependencies": {
