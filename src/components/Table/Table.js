@@ -4,6 +4,8 @@ import { PairBox } from '../PairBox/PairBox';
 import {
   Wrapper,
   Column,
+  RoundTitleContainer,
+  RoundTitle,
 } from './styled';
 
 export function Table({
@@ -16,6 +18,11 @@ export function Table({
       {
         data.map((column, index) => (
           <Column key={index}>
+            <RoundTitleContainer>
+              <RoundTitle>
+                Round {index + 1}
+              </RoundTitle>
+            </RoundTitleContainer>
             {
               column.map((pair, i) => (
                 <PairBox
