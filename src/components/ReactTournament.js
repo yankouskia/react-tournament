@@ -22,11 +22,38 @@ ReactTournament.propTypes = {
       PropTypes.arrayOf(PropTypes.shape({
         isWinner: PropTypes.bool,
         user: PropTypes.string.isRequired,
+        userLink: PropTypes.string,
         score: PropTypes.number.isRequired,
+        scoreLink: PropTypes.string,
       })),
     ),
   ).isRequired,
-  theme: PropTypes.object,
+  theme: PropTypes.shape({
+    primary: PropTypes.shape({
+      default: PropTypes.string,
+      dark: PropTypes.string,
+      darkest: PropTypes.string,
+      light: PropTypes.string,
+    }),
+    success: PropTypes.shape({
+      default: PropTypes.string,
+      dark: PropTypes.string,
+      darkest: PropTypes.string,
+      light: PropTypes.string,
+    }),
+    fail: PropTypes.shape({
+      default: PropTypes.string,
+      dark: PropTypes.string,
+      darkest: PropTypes.string,
+      light: PropTypes.string,
+    }),
+    textSmall: PropTypes.string,
+    textMedium: PropTypes.string,
+    textLarge: PropTypes.string,
+
+    textDark: PropTypes.string,
+    textLight: PropTypes.string,
+  }),
   width: PropTypes.string,
 };
 
