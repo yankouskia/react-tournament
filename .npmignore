@@ -1,0 +1,17 @@
+.storybook/
+check/
+node_modules/
+resources/
+src/
+stories/
+.babelrc
+.editorconfig
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+examples/
+.circleci/
+.npm
+index.js
+webpack.config.js
