@@ -3,6 +3,10 @@ module.exports = {
   entry: {
     library: './index.js',
   },
+  externals : {
+    react: 'react',
+    'styled-components': 'styled-components',
+  },
   output: {
     library: 'ReactTournament',
     libraryTarget: 'umd',
