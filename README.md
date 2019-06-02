@@ -1,4 +1,5 @@
-![Dev](https://img.shields.io/david/dev/yankouskia/react-tournament.svg) ![Peer](https://img.shields.io/david/peer/yankouskia/react-tournament.svg) ![Size](https://img.shields.io/bundlephobia/minzip/react-tournament.svg) ![GitHub issues](https://img.shields.io/github/issues-raw/yankouskia/react-tournament.svg) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/yankouskia/react-tournament.svg) ![GitHub](https://img.shields.io/github/license/yankouskia/react-tournament.svg) ![GitHub followers](https://img.shields.io/github/followers/yankouskia.svg?style=social) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/yankouskia/react-tournament.svg)
+![Dev](https://img.shields.io/david/dev/yankouskia/react-tournament.svg) ![Peer](https://img.shields.io/david/peer/yankouskia/react-tournament.svg) ![Size](https://img.shields.io/bundlephobia/minzip/react-tournament.svg) ![GitHub issues](https://img.shields.io/github/issues-raw/yankouskia/react-tournament.svg) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/yankouskia/react-tournament.svg) ![GitHub](https://img.shields.io/github/license/yankouskia/react-tournament.svg) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/yankouskia/react-tournament.svg) ![GitHub followers](https://img.shields.io/github/followers/yankouskia.svg?style=social)
+
 [![NPM](https://nodei.co/npm/react-tournament.png?downloads=true)](https://www.npmjs.com/package/react-tournament)
 
 # react-tournament
@@ -7,6 +8,7 @@
 ## Demo
 
 __React Stories are available [here](https://yankouskia.github.io/react-tournament/check)__
+
 __DOCs are available [here](#DOCS)__
 
 Usage
