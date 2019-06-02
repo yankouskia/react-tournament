@@ -6,18 +6,20 @@ import {
   Column,
 } from './styled';
 
-// TODO: implement radius
 export function Table({
+  aspectRatio,
   data,
+  width,
 }) {
   return (
-    <Wrapper>
+    <Wrapper width={width}>
       {
         data.map((column, index) => (
           <Column key={index}>
             {
               column.map((pair, i) => (
                 <PairBox
+                  aspectRatio={aspectRatio}
                   key={i}
                   pair={pair}
                   index={i + 1}
@@ -32,6 +34,7 @@ export function Table({
 };
 
 Table.propTypes = {
+  aspectRatio: PropTypes.number,
   data: PropTypes.arrayOf(
     PropTypes.arrayOf(
       PropTypes.arrayOf(PropTypes.shape({
@@ -41,4 +44,10 @@ Table.propTypes = {
       })),
     ),
   ).isRequired,
+  width: PropTypes.string,
+};
+
+Table.defaultProps = {
+  aspectRatio: 2,
+  width: 'auto',
 };

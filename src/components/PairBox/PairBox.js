@@ -13,31 +13,27 @@ import {
   Score,
 } from './styled';
 
-// TODO: implement radius
 export function PairBox({
   aspectRatio,
-  background,
-  radius,
-  width,
   pair,
   index,
 }) {
   const isFirstWinner = !!pair[0].isWinner;
   const isSecondWinner = !!pair[1].isWinner;
-  const hasResult = !isFirstWinner || isSecondWinner;
+  const hasResult = isFirstWinner || isSecondWinner;
 
   return (
-    <Wrapper background={background} width={width}>
+    <Wrapper>
       <Container aspectRatio={aspectRatio}>
         <Content>
-          <Column width={1} >
+          <Column width={0} primary light>
             <FlexCenterContainer>
               <PairNumber>
                 # {index}
               </PairNumber>
             </FlexCenterContainer>
           </Column>
-          <Column width={11} >
+          <Column width={15} >
             <Row width={1} primary={!hasResult} success={isFirstWinner} fail={isSecondWinner}>
               <Column width={1}>
                 <FlexCenterContainer>
@@ -48,14 +44,16 @@ export function PairBox({
               </Column>
               <Column width={6}>
                 <FlexCenterContainer>
-                  <Username>
+                  <Username href={pair[0].userLink} target="_blank">
                     {pair[0].user} {isFirstWinner && '→'}
                   </Username>
                 </FlexCenterContainer>
               </Column>
               <Column width={2}>
                 <FlexCenterContainer>
-                  <Score>{pair[0].score}</Score>
+                  <Score href={pair[0].scoreLink} target="_blank">
+                    {pair[0].score}
+                  </Score>
                 </FlexCenterContainer>
               </Column>
             </Row>
@@ -69,14 +67,16 @@ export function PairBox({
               </Column>
               <Column width={6}>
                 <FlexCenterContainer>
-                  <Username>
-                    {pair[1].user} {!isFirstWinner && '→'}
+                  <Username href={pair[1].userLink} target="_blank">
+                    {pair[1].user} {isSecondWinner && '→'}
                   </Username>
                 </FlexCenterContainer>
               </Column>
               <Column width={2}>
                 <FlexCenterContainer>
-                  <Score>{pair[1].score}</Score>
+                  <Score href={pair[1].scoreLink} target="_blank">
+                    {pair[1].score}
+                  </Score>
                 </FlexCenterContainer>
               </Column>
             </Row>
@@ -89,20 +89,14 @@ export function PairBox({
 
 PairBox.propTypes = {
   aspectRatio: PropTypes.number,
-  background: PropTypes.string,
   index: PropTypes.number.isRequired,
   pair: PropTypes.arrayOf(PropTypes.shape({
     user: PropTypes.string.isRequired,
     score: PropTypes.number.isRequired,
   })).isRequired,
-  radius: PropTypes.number,
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 PairBox.defaultProps = {
   aspectRatio: 2,
-  background: 'teal',
-  radius: 2,
-  width: 'auto',
 };
 

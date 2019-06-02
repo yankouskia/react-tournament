@@ -2,30 +2,29 @@
   "name": "react-standings",
   "version": "0.0.1",
   "description": "React Standings component",
-  "main": "index.js",
+  "main": "./dist/library.js",
   "repository": "git@github.com:yankouskia/react-standings.git",
   "author": "yankouskia <aleksandr.yankovskiy@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@storybook/addon-knobs": "^5.0.11",
     "@storybook/react": "^5.0.11",
     "babel-loader": "^8.0.6",
+    "faker": "^4.1.0",
     "prop-types": "^15.7.2",
-    "webpack": "^4.32.0",
+    "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
   },
   "peerDependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.1"
   },
   "scripts": {
     "storybook": "start-storybook",
     "build-storybook": "build-storybook -c .storybook -o check"
-  },
-  "dependencies": {
-    "styled-components": "^4.2.0"
   }
 }

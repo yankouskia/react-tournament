@@ -1,21 +1,22 @@
 import React from 'react';
-import { mergeTheme } from '../helpers/theme-helper';
+import PropTypes from 'prop-types';
 import { Table } from './Table/Table';
 import { Provider } from './Provider';
 
 export class ReactTournament extends React.PureComponent {
   render() {
-    const { data, theme } = this.props;
+    const { aspectRatio, data, theme, width } = this.props;
 
     return (
       <Provider theme={theme}>
-        <Table data={data} />
+        <Table aspectRatio={aspectRatio} data={data} width={width} />
       </Provider>
     )
   }
 };
 
 ReactTournament.propTypes = {
+  aspectRatio: PropTypes.number,
   data: PropTypes.arrayOf(
     PropTypes.arrayOf(
       PropTypes.arrayOf(PropTypes.shape({
@@ -26,8 +27,11 @@ ReactTournament.propTypes = {
     ),
   ).isRequired,
   theme: PropTypes.object,
+  width: PropTypes.string,
 };
 
 ReactTournament.defaultProps = {
+  aspectRatio: 2,
   theme: null,
+  width: 'auto',
 };

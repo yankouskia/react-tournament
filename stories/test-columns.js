@@ -1,116 +1,216 @@
+import faker from 'faker';
+
 export const data = [
   [
     [
       {
-        user: 'aaaaa',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
-        isWinner: true,
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
       }, {
-        user: 'zzzzzz',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+        isWinner: true,
       }
     ], [
       {
-        user: 'bbbbbb',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
         isWinner: true,
       }, {
-        user: 'yyyyyy',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
       }
     ], [
       {
-        user: 'cccccc',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
         isWinner: true,
       },
       {
-        user: 'xxxxxxx',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
       }
     ], [
       {
-        user: 'dddddd',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
         isWinner: true,
       },
       {
-        user: 'wwwwwww',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+      }
+    ],
+    [
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+      }, {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+        isWinner: true,
+      }
+    ], [
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+        isWinner: true,
+      }, {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+      }
+    ], [
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+        isWinner: true,
+      },
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+      }
+    ], [
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+        isWinner: true,
+      },
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
       }
     ]
   ],
   [
     [
       {
-        user: 'aaaaa',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
-        isWinner: true,
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
       }, {
-        user: 'bbbbbb',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+        isWinner: true,
       }
     ], [
       {
-        user: 'cccccc',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
         isWinner: true,
       }, {
-        user: 'dddddd',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+      }
+    ], [
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+        isWinner: true,
+      },
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+      }
+    ], [
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+        isWinner: true,
+      },
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
       }
     ]
   ],
   [
     [
       {
-        user: 'aaaaa',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+        isWinner: true,
       }, {
-        user: 'bbbbbb',
-        userLink: 'https://google.com/',
-        solutionLink: 'https://github.com/',
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
         score: Math.floor(Math.random() * 100),
-        scoreLink: 'https://gitlab.com/',
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+      }
+    ], [
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+        isWinner: true,
+      }, {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+      }
+    ]
+  ],
+  [
+    [
+      {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
+      }, {
+        user: faker.name.firstName(),
+        userLink: 'https://github.com/yankouskia',
+        score: Math.floor(Math.random() * 100),
+        scoreLink: 'https://github.com/yankouskia/react-tournament',
       }
     ]
   ],
