@@ -66,4 +66,48 @@ stories
         width={width}
       />
     );
+  })
+  .add('custom theme', () => {
+    const aspectRatio = number('aspectRatio', 3);
+    const width = text('width', 'auto');
+    const theme = {
+      primary: {
+        default: '#ffee58',
+        dark: '#fdd835',
+        darkest: '#f9a825',
+        light: '#fff59d',
+      },
+      success: {
+        default: '#ab47bc',
+        dark: '#8e24aa',
+        darkest: '#6a1b9a',
+        light: '#ce93d8',
+      },
+      fail: {
+        default: '#8d6e63',
+        dark: '#6d4c41',
+        darkest: '#3e2723',
+        light: '#bcaaa4',
+      },
+      textSmall: '10px',
+      textMedium: '14px',
+      textLarge: '20px',
+
+      textDark: '#1a237e',
+      textLight: '#b2ff59',
+    };
+
+    const customData = [...data];
+    customData.unshift([...data[0], ...data[0]]);
+    customData.unshift([...data[0], ...data[0], ...data[0], ...data[0]]);
+    customData.unshift([...data[0], ...data[0], ...data[0], ...data[0], ...data[0], ...data[0], ...data[0], ...data[0]]);
+
+    return (
+      <ReactTournament
+        aspectRatio={aspectRatio}
+        data={customData}
+        theme={theme}
+        width={width}
+      />
+    );
   });
