@@ -4,7 +4,6 @@ export const Wrapper = styled.div`
   margin: 5px;
   width: ${({ width }) => typeof +width === 'number' && !Number.isNaN(+width) ? `${+width}px` : width};
   /* border-radius: ${({ radius }) => typeof +radius === 'number' && !Number.isNaN(+radius) ? `${+radius}px` : radius}; */
-  background: ${({ background }) => background};
 `;
 
 export const Container = styled.div`

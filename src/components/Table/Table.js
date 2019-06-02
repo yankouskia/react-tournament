@@ -17,12 +17,11 @@ export function Table({
           <Column key={index}>
             {
               column.map((pair, i) => (
-                <>
-                  <PairBox
-                    pair={pair}
-                    index={i + 1}
-                  />
-                </>
+                <PairBox
+                  key={i}
+                  pair={pair}
+                  index={i + 1}
+                />
               ))
             }
           </Column>
@@ -33,9 +32,13 @@ export function Table({
 };
 
 Table.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.arrayOf(
+      PropTypes.arrayOf(PropTypes.shape({
+        isWinner: PropTypes.bool,
+        user: PropTypes.string.isRequired,
+        score: PropTypes.number.isRequired,
+      })),
+    ),
+  ).isRequired,
 };
-
-Table.defaultProps = {
-};
-

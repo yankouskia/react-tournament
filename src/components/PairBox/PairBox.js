@@ -22,7 +22,9 @@ export function PairBox({
   pair,
   index,
 }) {
-  const isFirstWinner = +pair[0].score > +pair[1].score;
+  const isFirstWinner = !!pair[0].isWinner;
+  const isSecondWinner = !!pair[1].isWinner;
+  const hasResult = !isFirstWinner || isSecondWinner;
 
   return (
     <Wrapper background={background} width={width}>
@@ -36,7 +38,7 @@ export function PairBox({
             </FlexCenterContainer>
           </Column>
           <Column width={11} >
-            <Row width={1} >
+            <Row width={1} primary={!hasResult} success={isFirstWinner} fail={isSecondWinner}>
               <Column width={1}>
                 <FlexCenterContainer>
                   <PersonNumber>
@@ -57,7 +59,7 @@ export function PairBox({
                 </FlexCenterContainer>
               </Column>
             </Row>
-            <Row width={1} >
+            <Row width={1} primary={!hasResult} success={isSecondWinner} fail={isFirstWinner}>
               <Column width={1}>
                 <FlexCenterContainer>
                   <PersonNumber>

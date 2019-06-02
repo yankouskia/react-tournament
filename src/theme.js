@@ -26,4 +26,7 @@ export const theme = {
     textDark: '#000000',
     textLight: '#ffffff',
   },
+  textSmall: '10px',
+  textMedium: '14px',
+  textLarge: '18px',
 };

@@ -7,6 +7,7 @@ export const data = [
         solutionLink: 'https://github.com/',
         score: Math.floor(Math.random() * 100),
         scoreLink: 'https://gitlab.com/',
+        isWinner: true,
       }, {
         user: 'zzzzzz',
         userLink: 'https://google.com/',
@@ -21,6 +22,7 @@ export const data = [
         solutionLink: 'https://github.com/',
         score: Math.floor(Math.random() * 100),
         scoreLink: 'https://gitlab.com/',
+        isWinner: true,
       }, {
         user: 'yyyyyy',
         userLink: 'https://google.com/',
@@ -35,6 +37,7 @@ export const data = [
         solutionLink: 'https://github.com/',
         score: Math.floor(Math.random() * 100),
         scoreLink: 'https://gitlab.com/',
+        isWinner: true,
       },
       {
         user: 'xxxxxxx',
@@ -50,6 +53,7 @@ export const data = [
         solutionLink: 'https://github.com/',
         score: Math.floor(Math.random() * 100),
         scoreLink: 'https://gitlab.com/',
+        isWinner: true,
       },
       {
         user: 'wwwwwww',
@@ -68,6 +72,7 @@ export const data = [
         solutionLink: 'https://github.com/',
         score: Math.floor(Math.random() * 100),
         scoreLink: 'https://gitlab.com/',
+        isWinner: true,
       }, {
         user: 'bbbbbb',
         userLink: 'https://google.com/',
@@ -82,6 +87,7 @@ export const data = [
         solutionLink: 'https://github.com/',
         score: Math.floor(Math.random() * 100),
         scoreLink: 'https://gitlab.com/',
+        isWinner: true,
       }, {
         user: 'dddddd',
         userLink: 'https://google.com/',

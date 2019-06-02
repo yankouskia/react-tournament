@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 import { PairBox } from '../src/components/PairBox/PairBox';
+import { Provider } from '../src/components/Provider';
 
 const stories = storiesOf('Pair Box', module);
 
@@ -23,13 +24,15 @@ stories
     }]
 
     return (
-      <PairBox
-        aspectRatio={aspectRatio}
-        background={background}
-        index={index}
-        pair={pair}
-        radius={radius}
-        width={width}
-      />
+      <Provider>
+        <PairBox
+          aspectRatio={aspectRatio}
+          background={background}
+          index={index}
+          pair={pair}
+          radius={radius}
+          width={width}
+        />
+      </Provider>
     );
   });
